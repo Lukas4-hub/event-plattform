@@ -1,2 +1,25 @@
-# event-plattform
-App full stack para eventos: organizadores crean y publican eventos con ediciones y cupos; asistentes se registran/cancelan y ven “Mis registros”. Incluye login con roles (RBAC), control de cupos y base en Postgres con Prisma.
+# Event Platform (Full Stack)
+
+Plataforma para publicar eventos, crear ediciones y registrar asistentes.
+
+## Features
+- Auth (Credentials) + roles: ORGANIZER / ATTENDEE
+- Organizador: crear eventos, publicar/despublicar, crear ediciones
+- Asistente: registrarse/cancelar, ver “Mis registros”
+- Control de cupos + evita doble registro
+
+## Tech
+Next.js (App Router), NextAuth, Prisma, PostgreSQL, Tailwind/CSS
+
+## Demo users
+- Organizer: org@demo.com / organizer123
+- Attendee:  att@demo.com / attendee123
+
+## Run locally
+1) DB:
+   - `docker compose up -d`
+2) App:
+   - `npm install`
+   - `npx prisma migrate dev`
+   - `npx prisma db seed`
+   - `npm run dev`
