@@ -2,7 +2,7 @@
 
 Plataforma para publicar eventos, crear ediciones y registrar asistentes.
 
-## Features
+## Características
 - Auth (Credentials) + roles: ORGANIZER / ATTENDEE
 - Organizador: crear eventos, publicar/despublicar, crear ediciones
 - Asistente: registrarse/cancelar, ver “Mis registros”
@@ -11,11 +11,11 @@ Plataforma para publicar eventos, crear ediciones y registrar asistentes.
 ## Tech
 Next.js (App Router), NextAuth, Prisma, PostgreSQL, Tailwind/CSS
 
-## Demo users
+## Usuarios demo
 - Organizer: org@demo.com / organizer123
 - Attendee:  att@demo.com / attendee123
 
-## Run locally
+## Correrlo localmente
 1) DB:
    - `docker compose up -d`
 2) App:
